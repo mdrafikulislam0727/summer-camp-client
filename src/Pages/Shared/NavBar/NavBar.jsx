@@ -5,7 +5,14 @@ import { AuthContext } from "../../../Providers/AuthProvider";
 
 const NavBar = () => {
     const [them, setThem]=useState(localStorage.getItem("them") ? localStorage.getItem("them") : "light");
-    const {user} =useContext(AuthContext)
+    const {user,logOut} =useContext(AuthContext)
+
+    const handelLogOut = () =>{
+        logOut()
+        .then(() =>{}) 
+        .catch(error => console.log(error))
+    }
+
     const handelToggle = (e) =>{
         if(e.target.checked){
             setThem("dark")
@@ -23,8 +30,16 @@ const NavBar = () => {
         <li className="font-bold text-[20px] hover:text-cyan-300"><Link>Home</Link></li>
         <li className="font-bold text-[20px] hover:text-cyan-300"><Link>Instructors</Link></li>
         <li className="font-bold text-[20px] hover:text-cyan-300"><Link>Classes</Link></li>
-        <li className="font-bold text-[20px] hover:text-cyan-300"><Link>Dashboard</Link></li>
-        <li className="font-bold text-[20px] hover:text-cyan-300"><Link to="/login">Login</Link></li>
+       {
+        user ? <>
+         <li className="font-bold text-[20px] hover:text-cyan-300"><Link>Dashboard</Link></li>
+         <button onClick={handelLogOut} className="btn btn-outline btn-secondary">LogOut</button>
+
+        </> :
+         <>
+                 <li className="font-bold text-[20px] hover:text-cyan-300"><Link to="/login">Login</Link></li>
+         </>
+       }
 
 
 
