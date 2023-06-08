@@ -5,7 +5,7 @@ import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
-import Classes from "../components/Classes/Classes";
+import ClassesCard from "../Pages/ClassesCard/ClassesCard";
 
 
 
@@ -19,18 +19,18 @@ import Classes from "../components/Classes/Classes";
             element:<Home></Home>
         },
         {
-          path:'/classes',
-          element:<Classes></Classes>
-        },
-        {
           path:'/login',
           element:<Login></Login>
         },
         {
           path:'/signup',
           element:<SignUp></SignUp>
+        },
+        {
+          path:'/classesCard',
+          element:<ClassesCard></ClassesCard>
         }
-      
+       
       ]
     },
   ]);
