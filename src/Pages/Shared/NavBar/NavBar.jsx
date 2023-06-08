@@ -27,12 +27,14 @@ const NavBar = () => {
     },[them])
 
     const navOptions = <>
-        <li className="font-bold text-[20px] hover:text-cyan-300"><Link>Home</Link></li>
+        <li className="font-bold text-[20px] hover:text-cyan-300"><Link to="/">Home</Link></li>
         <li className="font-bold text-[20px] hover:text-cyan-300"><Link>Instructors</Link></li>
         <li className="font-bold text-[20px] hover:text-cyan-300"><Link>Classes</Link></li>
+    
        {
         user ? <>
          <li className="font-bold text-[20px] hover:text-cyan-300"><Link>Dashboard</Link></li>
+         <img className="w-[50px] h-[50px] mr-4 rounded-lg" src={user?.photoURL} alt="" />
          <button onClick={handelLogOut} className="btn btn-outline btn-secondary">LogOut</button>
 
         </> :
@@ -58,11 +60,13 @@ const NavBar = () => {
                     </div>
                     <img className="w-[50px] rounded-lg" src={webIcons} alt="" />
                     <a className="btn btn-ghost normal-case font-bold text-[20px] hover:text-cyan-300">LearnPlayCamp</a>
+
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {navOptions}
                     </ul>
+                  
                 </div>
                 {/* -------------------- */}
                 <label className="swap swap-rotate">

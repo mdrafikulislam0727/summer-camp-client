@@ -1,11 +1,16 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
 
 const Login = () => {
   const { signIn } = useContext(AuthContext)
+  const navigate =useNavigate()
+  const location =useLocation()
+
+  const from = location.state?.from?.pathname || "/"
 
   const handelLogin = event => {
     event.preventDefault();
@@ -24,6 +29,7 @@ const Login = () => {
           showConfirmButton: false,
           timer: 1500
         })
+        navigate(from, {replace: true});
       })
   }
   return (
@@ -55,6 +61,7 @@ const Login = () => {
             </div>
             <p>New here? <Link to="/signup" className="text-orange-400 font-bold pb-4">Create a New Account</Link></p>
           </form>
+          <SocialLogin></SocialLogin>
         </div>
       </div>
     </div>

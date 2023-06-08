@@ -1,0 +1,46 @@
+[
+  
+    {
+      "image": "https://i.ibb.co/pW4MQkn/img4.jpg",
+      "name": "football",
+      "instructor": "Emily Johnson",
+      "availableSeats": 10,
+      "price": 25.5
+    },
+    {
+      "image": "https://i.ibb.co/mbT17nz/img2.jpg",
+      "name": "Cricket",
+      "instructor": "Michael Davis",
+      "availableSeats": 8,
+      "price": 18.75
+    },
+    {
+      "image": "https://i.ibb.co/P5rq7QL/img5.jpg",
+      "name": "Racket",
+      "instructor": "Maria Martinez",
+      "availableSeats": 20,
+      "price": 15.0
+    },
+    {
+      "image": "https://i.ibb.co/ZBF2jJ9/img3.png",
+      "name": "basketball",
+      "instructor": "David Thompson",
+      "availableSeats": 12,
+      "price": 30.0
+    },
+    {
+      "image": "https://i.ibb.co/FnSkYWk/img6.jpg",
+      "name": "chess",
+      "instructor": "Sophia Adams",
+      "availableSeats": 6,
+      "price": 22.5
+    },
+    {
+      "image": "https://i.ibb.co/F0sYrsd/img1.jpg",
+      "name": "hokey stick",
+      "instructor": "Sarah Miller",
+      "availableSeats": 16,
+      "price": 17.99
+    }
+  
+  ]
