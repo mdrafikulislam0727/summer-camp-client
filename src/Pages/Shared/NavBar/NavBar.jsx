@@ -29,7 +29,7 @@ const NavBar = () => {
     const navOptions = <>
         <li className="font-bold text-[20px] hover:text-cyan-300"><Link to="/">Home</Link></li>
         <li className="font-bold text-[20px] hover:text-cyan-300"><Link>Instructors</Link></li>
-        <li className="font-bold text-[20px] hover:text-cyan-300"><Link>Classes</Link></li>
+        <li className="font-bold text-[20px] hover:text-cyan-300"><Link to="/classes">Classes</Link></li>
     
        {
         user ? <>
