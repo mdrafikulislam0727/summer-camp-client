@@ -5,105 +5,177 @@
       "name": "football",
       "instructor": "Emily Johnson",
       "availableSeats": 10,
-      "price": 25.5
+      "price": 25.5,
+      "numberOfStudent":21
     },
     {
       "image": "https://i.ibb.co/mbT17nz/img2.jpg",
       "name": "Cricket",
       "instructor": "Michael Davis",
       "availableSeats": 8,
-      "price": 18.75
+      "price": 18.75,
+      "numberOfStudent":15
     },
     {
       "image": "https://i.ibb.co/P5rq7QL/img5.jpg",
       "name": "Racket",
       "instructor": "Maria Martinez",
       "availableSeats": 20,
-      "price": 15.0
+      "price": 15.0,
+      "numberOfStudent":18
     },
     {
       "image": "https://i.ibb.co/ZBF2jJ9/img3.png",
       "name": "basketball",
       "instructor": "David Thompson",
       "availableSeats": 12,
-      "price": 30.0
+      "price": 30.0,
+      "numberOfStudent":27
     },
     {
       "image": "https://i.ibb.co/FnSkYWk/img6.jpg",
       "name": "chess",
       "instructor": "Sophia Adams",
       "availableSeats": 6,
-      "price": 22.5
+      "price": 22.5,
+      "numberOfStudent":30
     },
     {
       "image": "https://i.ibb.co/F0sYrsd/img1.jpg",
       "name": "hokey stick",
       "instructor": "Sarah Miller",
       "availableSeats": 16,
-      "price": 17.99
+      "price": 17.99,
+      "numberOfStudent":37
     },
     {
       "image": "https://i.ibb.co/yWRnYW7/baseball.jpg",
       "name": "basketball",
       "instructor": "Michael Adams",
       "availableSeats": 12,
-      "price": 19.99
+      "price": 19.99,
+      "numberOfStudent":40
     },
     {
       "image": "https://i.ibb.co/0MF4Xw6/billiards.jpg",
       "name": "Billiards",
       "instructor": "Sarah Johnson",
       "availableSeats": 15,
-      "price": 30.99
+      "price": 30.99,
+      "numberOfStudent":18
     },
     {
       "image": "https://i.ibb.co/Y2RqyDb/bolleyball.jpg",
       "name": "volleyball",
       "instructor": "Professor Jonathan Walker",
       "availableSeats": 11,
-      "price": 34.99
+      "price": 34.99,
+      "numberOfStudent":22
     },
     {
       "image": "https://i.ibb.co/CPLs26k/bowilng.jpg",
       "name": "Bowing",
       "instructor": "Dr. Laura Mitchell",
       "availableSeats": 19,
-      "price": 26.99
+      "price": 26.99,
+      "numberOfStudent":35
     },
     {
       "image": "https://i.ibb.co/5s7946g/cyciling.jpg",
       "name": "cycling",
       "instructor": "Sarah Professor William Jenkins",
       "availableSeats": 13,
-      "price": 36.99
+      "price": 36.99,
+      "numberOfStudent":37
+
     },
     {
       "image": "https://i.ibb.co/YRWnVX3/goif.jpg",
       "name": "Goif",
       "instructor": "Dr. Rachel Turner",
       "availableSeats": 16,
-      "price": 29.99
+      "price": 29.99,
+      "numberOfStudent":25
     },
     {
       "image": "https://i.ibb.co/YRWnVX3/goif.jpg",
       "name": "Rugby",
       "instructor": "Professor Christopher Davis",
       "availableSeats": 11,
-      "price": 45.99
+      "price": 45.99,
+      "numberOfStudent":35
     },
     {
       "image": "https://i.ibb.co/XsG2GqK/swimming.jpg",
       "name": "swimming",
       "instructor": "Dr. Sophia Ramirez",
       "availableSeats": 14,
-      "price": 28.99
+      "price": 28.99,
+      "numberOfStudent":35
     },
     {
       "image": "https://i.ibb.co/V2XfZGY/tabletanish.jpg",
       "name": "Dr. Olivia Anderson",
       "instructor": "Sarah Professor William Jenkins",
       "availableSeats": 12,
-      "price": 23.99
+      "price": 23.99,
+      "numberOfStudent":30
+    },
+    {
+      "image": "https://i.ibb.co/748yD5j/boxin.jpg",
+      "name": "Boxin",
+      "instructor": "Dr. Emily Johnson",
+      "availableSeats": 20,
+      "price": 23.99,
+      "numberOfStudent":43
+    },
+    {
+      "image": "https://i.ibb.co/VxZKDdQ/curling.jpg",
+      "name": "Curling",
+      "instructor": "Professor Jennifer Lee",
+      "availableSeats": 22,
+      "price": 23.99,
+      "numberOfStudent":44
+    },
+    {
+      "image": "https://i.ibb.co/pvnhGKb/archery.jpg",
+      "name": "Archery",
+      "instructor": "Professor Jessica Brown",
+      "availableSeats": 7,
+      "price": 23.99,
+      "numberOfStudent":20
+    },
+    {
+      "image": "https://i.ibb.co/R7mrxYX/skateboarding.jpg",
+      "name": "Skateboarding",
+      "instructor": "Dr. Robert Taylor",
+      "availableSeats": 9,
+      "price": 23.99,
+      "numberOfStudent":28
+    },
+    {
+      "image": "https://i.ibb.co/ySn5qyC/skiing.jpg",
+      "name": "Skiing",
+      "instructor": "Professor John Smith",
+      "availableSeats": 11,
+      "price": 23.99,
+      "numberOfStudent":30
+    },
+    {
+      "image": "https://i.ibb.co/wWbnyxF/fitness.jpg",
+      "name": "fitness",
+      "instructor": "Dr. Christopher Wilson",
+      "availableSeats": 9,
+      "price": 23.99,
+      "numberOfStudent":20
+    },
+    {
+      "image": "https://i.ibb.co/TBLh36B/youga.jpg",
+      "name": "Youga",
+      "instructor": "Dr. Andrew Young",
+      "availableSeats": 5,
+      "price": 23.99,
+      "numberOfStudent":12
     }
   
   ]
