@@ -1,12 +1,13 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const ClassesCardData = ({ item }) => {
     const { image, name, instructor, availableSeats, price } = item
     const { user } = useContext(AuthContext)
     const navigate = useNavigate()
+    const location =useLocation()
 
     const handelAddToCard = item => {
         console.log(item)
@@ -34,7 +35,7 @@ const ClassesCardData = ({ item }) => {
                 confirmButtonText: 'Login now'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    navigate('/login')
+                    navigate('/login', {state:{from:location}})
                 }
             })
         }
