@@ -3,7 +3,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
-const PopularCard = ({data: item}) => {
+const PopularCard = ({item}) => {
     const {image,name,instructor,numberOfStudent} =item;
     const {user}=useContext(AuthContext)
     const navigate =useNavigate()

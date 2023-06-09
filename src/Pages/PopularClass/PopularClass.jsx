@@ -11,7 +11,7 @@ const PopularClass = () => {
                 {
                     popularData.slice(0, 6).map(item => <PopularCard
                         key={item._id}
-                        data={item}
+                        item={item}
                     >
 
                     </PopularCard>)
