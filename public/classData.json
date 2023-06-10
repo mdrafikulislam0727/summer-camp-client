@@ -4,6 +4,7 @@
       "image": "https://i.ibb.co/pW4MQkn/img4.jpg",
       "name": "football",
       "instructor": "Emily Johnson",
+      "instructorImg":"https://i.ibb.co/ysWX7Kd/img1.jpg",
       "availableSeats": 10,
       "price": 25.5,
       "numberOfStudent":21
@@ -12,6 +13,7 @@
       "image": "https://i.ibb.co/mbT17nz/img2.jpg",
       "name": "Cricket",
       "instructor": "Michael Davis",
+      "instructorImg":"https://i.ibb.co/ysWX7Kd/img1.jpg",
       "availableSeats": 8,
       "price": 18.75,
       "numberOfStudent":15
@@ -20,6 +22,7 @@
       "image": "https://i.ibb.co/P5rq7QL/img5.jpg",
       "name": "Racket",
       "instructor": "Maria Martinez",
+      "instructorImg":"https://i.ibb.co/ysWX7Kd/img1.jpg",
       "availableSeats": 20,
       "price": 15.0,
       "numberOfStudent":18
@@ -28,6 +31,7 @@
       "image": "https://i.ibb.co/ZBF2jJ9/img3.png",
       "name": "basketball",
       "instructor": "David Thompson",
+      "instructorImg":"https://i.ibb.co/SRYHV71/img2.jpg",
       "availableSeats": 12,
       "price": 30.0,
       "numberOfStudent":27
@@ -36,6 +40,7 @@
       "image": "https://i.ibb.co/FnSkYWk/img6.jpg",
       "name": "chess",
       "instructor": "Sophia Adams",
+      "instructorImg":"https://i.ibb.co/t4jR8pJ/img3.jpg",
       "availableSeats": 6,
       "price": 22.5,
       "numberOfStudent":30
@@ -44,6 +49,7 @@
       "image": "https://i.ibb.co/F0sYrsd/img1.jpg",
       "name": "hokey stick",
       "instructor": "Sarah Miller",
+      "instructorImg":"https://i.ibb.co/gmSG534/img4.jpg",
       "availableSeats": 16,
       "price": 17.99,
       "numberOfStudent":37
@@ -52,6 +58,7 @@
       "image": "https://i.ibb.co/yWRnYW7/baseball.jpg",
       "name": "basketball",
       "instructor": "Michael Adams",
+      "instructorImg":"https://i.ibb.co/v4f19Dy/img5.jpg",
       "availableSeats": 12,
       "price": 19.99,
       "numberOfStudent":40
@@ -76,6 +83,7 @@
       "image": "https://i.ibb.co/CPLs26k/bowilng.jpg",
       "name": "Bowing",
       "instructor": "Dr. Laura Mitchell",
+      "instructorImg":"https://i.ibb.co/Rzp8btc/img6.jpg",
       "availableSeats": 19,
       "price": 26.99,
       "numberOfStudent":35
@@ -84,6 +92,7 @@
       "image": "https://i.ibb.co/5s7946g/cyciling.jpg",
       "name": "cycling",
       "instructor": "Sarah Professor William Jenkins",
+      "instructorImg":"https://i.ibb.co/1fTjFQn/img8.jpg",
       "availableSeats": 13,
       "price": 36.99,
       "numberOfStudent":37
@@ -93,6 +102,7 @@
       "image": "https://i.ibb.co/YRWnVX3/goif.jpg",
       "name": "Goif",
       "instructor": "Dr. Rachel Turner",
+      "instructorImg":"https://i.ibb.co/bNgnn7P/img10.jpg",
       "availableSeats": 16,
       "price": 29.99,
       "numberOfStudent":25
@@ -101,6 +111,7 @@
       "image": "https://i.ibb.co/YRWnVX3/goif.jpg",
       "name": "Rugby",
       "instructor": "Professor Christopher Davis",
+      "instructorImg":"https://i.ibb.co/YDWfnhV/img12.jpg",
       "availableSeats": 11,
       "price": 45.99,
       "numberOfStudent":35
@@ -109,6 +120,7 @@
       "image": "https://i.ibb.co/XsG2GqK/swimming.jpg",
       "name": "swimming",
       "instructor": "Dr. Sophia Ramirez",
+      "instructorImg":"https://i.ibb.co/1M8ggYq/img9.jpg",
       "availableSeats": 14,
       "price": 28.99,
       "numberOfStudent":35
@@ -117,6 +129,7 @@
       "image": "https://i.ibb.co/V2XfZGY/tabletanish.jpg",
       "name": "Dr. Olivia Anderson",
       "instructor": "Sarah Professor William Jenkins",
+      "instructorImg":"https://i.ibb.co/hfYfsRK/img11.jpg",
       "availableSeats": 12,
       "price": 23.99,
       "numberOfStudent":30
@@ -125,6 +138,7 @@
       "image": "https://i.ibb.co/748yD5j/boxin.jpg",
       "name": "Boxin",
       "instructor": "Dr. Emily Johnson",
+      "instructorImg":"https://i.ibb.co/Tb5MxWv/img13.jpg",
       "availableSeats": 20,
       "price": 23.99,
       "numberOfStudent":43
@@ -133,6 +147,7 @@
       "image": "https://i.ibb.co/VxZKDdQ/curling.jpg",
       "name": "Curling",
       "instructor": "Professor Jennifer Lee",
+      "instructorImg":"https://i.ibb.co/QQBZcRX/img14.jpg",
       "availableSeats": 22,
       "price": 23.99,
       "numberOfStudent":44
@@ -149,6 +164,7 @@
       "image": "https://i.ibb.co/R7mrxYX/skateboarding.jpg",
       "name": "Skateboarding",
       "instructor": "Dr. Robert Taylor",
+      "instructorImg":"https://i.ibb.co/S6FFnnj/img15.jpg",
       "availableSeats": 9,
       "price": 23.99,
       "numberOfStudent":28
@@ -157,6 +173,7 @@
       "image": "https://i.ibb.co/ySn5qyC/skiing.jpg",
       "name": "Skiing",
       "instructor": "Professor John Smith",
+      "instructorImg":"https://i.ibb.co/Z2XWVdL/img16.jpg",
       "availableSeats": 11,
       "price": 23.99,
       "numberOfStudent":30

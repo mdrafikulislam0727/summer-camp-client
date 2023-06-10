@@ -32,6 +32,8 @@ const SignUp = () => {
     })
   };
 
+  https://codesandbox.io/s/react-hook-form-password-match-check-standard-validation-eo6en?file=/src/index.js:933-941
+
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content w-full flex-col lg:flex-row-reverse">

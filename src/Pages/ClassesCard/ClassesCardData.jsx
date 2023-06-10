@@ -4,22 +4,29 @@ import Swal from "sweetalert2";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const ClassesCardData = ({ item }) => {
-    const { image, name, instructor, availableSeats, price } = item
+    const { image, name, instructor, availableSeats, price, _id } = item
     const { user } = useContext(AuthContext)
     const navigate = useNavigate()
     const location =useLocation()
 
     const handelAddToCard = item => {
         console.log(item)
-        if (user) {
-            fetch('http://localhost:5000/carts')
+        if (user && user.email) {
+            const orderClass ={classId: _id, image,name,instructor,availableSeats,price, email: user.email}
+            fetch('http://localhost:5000/carts',{
+                method:'POST',
+                headers:{
+                    'content-type':'application/json'
+                },
+                body:JSON.stringify(orderClass)
+            })
                 .then(res => res.json())
                 .then(data => {
                     if (data.insertedId) {
                         Swal.fire({
                             position: 'top-center',
                             icon: 'success',
-                            title: 'Your work has been saved',
+                            title: 'Your Class added',
                             showConfirmButton: false,
                             timer: 1500
                         })
