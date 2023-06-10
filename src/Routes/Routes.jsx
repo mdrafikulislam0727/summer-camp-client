@@ -6,6 +6,9 @@ import Home from "../Pages/Home/Home/Home";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
 import ClassesCard from "../Pages/ClassesCard/ClassesCard";
+import Dashboard from "../Layout/Dashboard";
+import MyClasses from "../Pages/Dashboard/MyClasses/MyClasses";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -30,7 +33,19 @@ import ClassesCard from "../Pages/ClassesCard/ClassesCard";
           path:'/classesCard',
           element:<ClassesCard></ClassesCard>
         }
-       
       ]
     },
+    {
+      path:'dashboard',
+      element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
+      children:[
+        {
+          path:'myclasses',
+          element:<MyClasses></MyClasses>
+        },
+        {
+          path:'myenrolledclasses'
+        }
+      ]
+    }
   ]);
