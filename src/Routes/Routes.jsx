@@ -9,6 +9,7 @@ import ClassesCard from "../Pages/ClassesCard/ClassesCard";
 import Dashboard from "../Layout/Dashboard";
 import MyClasses from "../Pages/Dashboard/MyClasses/MyClasses";
 import PrivateRoute from "./PrivateRoute";
+import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
 
 
 
@@ -45,6 +46,10 @@ import PrivateRoute from "./PrivateRoute";
         },
         {
           path:'myenrolledclasses'
+        },
+        {
+          path:'allusers',
+          element:<AllUsers></AllUsers>
         }
       ]
     }
