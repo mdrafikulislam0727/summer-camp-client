@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import Swal from "sweetalert2";
 
 const AllUsers = () => {
 
@@ -6,6 +7,24 @@ const AllUsers = () => {
         const res = await fetch('http://localhost:5000/users')
         return res.json()
     })
+    const  handelMakeAdmin = user =>{
+        fetch(`http://localhost:5000/users/admin/${user._id}`,{
+            method:'PATCH'
+        })
+        .then(res => res.json())
+        .then(data =>{
+            if(data.modifiedCount){
+                refetch()
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title:`${user.name} is an admin Now`,
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
+            }
+        })
+    }
     return (
         <div className="w-full pl-4">
             <h2 className="text-3xl font-semibold text-center mb-4">Total Users : {users.length}</h2>
@@ -18,7 +37,6 @@ const AllUsers = () => {
                             <th>Name</th>
                             <th>Email</th>
                             <th>Current Role</th>
-                            <th className="text-center">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -27,9 +45,9 @@ const AllUsers = () => {
                                 <th>{index + 1}</th>
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
-                                <td>Quality Control Specialist</td>
+                                <td>{user.role === 'admin'? 'admin' :  <button onClick={()=> handelMakeAdmin(user)} className="btn btn-ghost  text-gray-700 hover:bg-cyan-400 bg-cyan-200 me-2">MAKE ADMIN</button>}</td>
+
                                 <td>
-                                    <button className="btn btn-ghost  text-gray-700 hover:bg-cyan-400 bg-cyan-200 me-2">MAKE ADMIN</button>
                                     <button className="btn btn-ghost  text-gray-700 bg-emerald-200 hover:bg-emerald-400 me-2">MAKE INSTRUCTOR</button>
                                 </td>
                             </tr>)
