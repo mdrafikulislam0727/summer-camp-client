@@ -7,6 +7,7 @@ const AllUsers = () => {
         const res = await fetch('http://localhost:5000/users')
         return res.json()
     })
+    // admin
     const  handelMakeAdmin = user =>{
         fetch(`http://localhost:5000/users/admin/${user._id}`,{
             method:'PATCH'
@@ -19,6 +20,25 @@ const AllUsers = () => {
                     position: 'top-end',
                     icon: 'success',
                     title:`${user.name} is an admin Now`,
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
+            }
+        })
+    }
+    // instructor
+    const handelMakeInstructor = user =>{
+        fetch(`http://localhost:5000/users/instructor/${user._id}`,{
+            method:'PATCH'
+        })
+        .then(res => res.json())
+        .then(data =>{
+            if(data.modifiedCount){
+                refetch()
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title:`${user.name} is an Instructor Now`,
                     showConfirmButton: false,
                     timer: 1500
                   })
@@ -48,7 +68,11 @@ const AllUsers = () => {
                                 <td>{user.role === 'admin'? 'admin' :  <button onClick={()=> handelMakeAdmin(user)} className="btn btn-ghost  text-gray-700 hover:bg-cyan-400 bg-cyan-200 me-2">MAKE ADMIN</button>}</td>
 
                                 <td>
-                                    <button className="btn btn-ghost  text-gray-700 bg-emerald-200 hover:bg-emerald-400 me-2">MAKE INSTRUCTOR</button>
+                                    {
+                                        user.role === 'instructor'? 'instructor' : 
+                                        <button onClick={() => handelMakeInstructor(user)} className="btn btn-ghost  text-gray-700 bg-emerald-200 hover:bg-emerald-400 me-2">MAKE INSTRUCTOR</button>
+                                    }
+                                    
                                 </td>
                             </tr>)
                         }
