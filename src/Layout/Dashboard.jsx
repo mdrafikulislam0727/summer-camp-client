@@ -2,7 +2,7 @@ import { NavLink, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
     // TODO
-    const isAdmin = true;
+    const isAdmin = false;
     return (
         <div className="drawer lg:drawer-open">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -17,6 +17,7 @@ const Dashboard = () => {
 
                     {
                         isAdmin ? <>
+                            <li><NavLink className="font-bold" to="/">Admin Home</NavLink></li>
                             <li><NavLink className="font-bold" to="/dashboard/allclasses">Manage Classes</NavLink></li>
                             <li><NavLink className="font-bold" to="/dashboard/allusers">Manage Users</NavLink></li>
                             <div className="divider"></div>
@@ -24,6 +25,7 @@ const Dashboard = () => {
                         </> :
 
                             <>
+                                <li><NavLink className="font-bold" to="/">Student Home</NavLink></li>
                                 <li><NavLink className="font-bold" to="/dashboard/myenrolledclasses">My Enrolled Classes</NavLink></li>
                                 <li><NavLink className="font-bold" to="/dashboard/myclasses">My Selected Classes</NavLink></li>
                                 <div className="divider"></div>
