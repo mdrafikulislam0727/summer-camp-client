@@ -31,6 +31,7 @@ const Dashboard = () => {
                         <li><NavLink className="font-bold" to="/">Home</NavLink></li></div>)
                         : isInstructor ? (
                            <div>
+                             <li><NavLink className="font-bold text-lime-400" to="/">Instructor Home</NavLink></li>
                              <li><NavLink className="font-bold" to="/dashboard/addclasses">Add a Class</NavLink></li>
                              <li><NavLink className="font-bold" to="/">My Classes</NavLink></li>
                            </div>
@@ -38,7 +39,7 @@ const Dashboard = () => {
                         ) 
 
                         :
-                         (<div> <li><NavLink className="font-bold" to="/">Student Home</NavLink></li>
+                         (<div> <li><NavLink className="font-bold text-lime-400" to="/">Student Home</NavLink></li>
                                 <li><NavLink className="font-bold" to="/dashboard/myenrolledclasses">My Enrolled Classes</NavLink></li>
                                 <li><NavLink className="font-bold" to="/dashboard/myclasses">My Selected Classes</NavLink></li>
                                 <div className="divider"></div>

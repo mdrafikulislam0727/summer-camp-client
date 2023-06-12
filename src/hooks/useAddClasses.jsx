@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 const useAddClasses = () =>{
-    const [classesData, setClassesData] =useState([])
+    const [addClassesData, setClassesData] =useState([])
     const [loading, setLoading] =useState(true)
 
     useEffect(()=>{
@@ -12,7 +12,7 @@ const useAddClasses = () =>{
             setLoading(false)
         })
     },[])
-    return [classesData, loading]
+    return [addClassesData, loading]
 }
 
 export default useAddClasses;
