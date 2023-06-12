@@ -11,6 +11,7 @@ import MyClasses from "../Pages/Dashboard/MyClasses/MyClasses";
 import PrivateRoute from "./PrivateRoute";
 import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
 import AddClasses from "../Pages/Dashboard/AddClasses/AddClasses";
+import ManageClasses from "../Pages/Dashboard/ManageClasses/ManageClasses";
 
 
 
@@ -55,6 +56,10 @@ import AddClasses from "../Pages/Dashboard/AddClasses/AddClasses";
         {
           path:'addclasses',
           element:<AddClasses></AddClasses>
+        },
+        {
+          path:'manageclasses',
+          element:<ManageClasses></ManageClasses>
         }
       ]
     }

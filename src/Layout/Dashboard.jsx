@@ -24,8 +24,8 @@ const Dashboard = () => {
                 <ul className="menu p-4 w-80 h-full  text-base-content">
 
                     {
-                        isAdmin ? (<div> <li><NavLink className="font-bold" to="/">Admin Home</NavLink></li>
-                        <li><NavLink className="font-bold" to="/dashboard/allclasses">Manage Classes</NavLink></li>
+                        isAdmin ? (<div> <li><NavLink className="font-bold text-lime-400" to="/">Admin Home</NavLink></li>
+                        <li><NavLink className="font-bold" to="/dashboard/manageclasses">Manage Classes</NavLink></li>
                         <li><NavLink className="font-bold" to="/dashboard/allusers">Manage Users</NavLink></li>
                         <div className="divider"></div>
                         <li><NavLink className="font-bold" to="/">Home</NavLink></li></div>)
