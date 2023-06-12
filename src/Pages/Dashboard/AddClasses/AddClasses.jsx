@@ -24,7 +24,7 @@ const onSubmit = data =>{
         if(imagResponse.success){
             const imgURl=imagResponse.data.display_url;
             const {name,email,instructorName,price,availableSeats}=data;
-            const newClass = {name, email, instructorName, price, availableSeats, image:imgURl, status: 'pending'}
+            const newClass = {name, email, instructorName, price, availableSeats, image:imgURl, status: 'pending' , student:0, enrolled:0}
             console.log(newClass)
             axiosSecure.post('/addclasses', newClass)
             .then(data =>{

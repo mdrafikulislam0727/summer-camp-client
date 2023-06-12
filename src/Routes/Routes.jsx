@@ -12,6 +12,7 @@ import PrivateRoute from "./PrivateRoute";
 import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
 import AddClasses from "../Pages/Dashboard/AddClasses/AddClasses";
 import ManageClasses from "../Pages/Dashboard/ManageClasses/ManageClasses";
+import InstructorsPage from "../Pages/InstructorsPage/InstructorsPage";
 
 
 
@@ -35,6 +36,10 @@ import ManageClasses from "../Pages/Dashboard/ManageClasses/ManageClasses";
         {
           path:'/classesCard',
           element:<ClassesCard></ClassesCard>
+        },
+        {
+          path:'instructors',
+          element:<InstructorsPage></InstructorsPage>
         }
       ]
     },
