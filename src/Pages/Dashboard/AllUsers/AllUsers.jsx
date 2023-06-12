@@ -1,11 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
 import Swal from "sweetalert2";
+import useAxiosSecure from "../../../hooks/useAxiosSecure";
 
 const AllUsers = () => {
-
+    const [axiosSecure] =useAxiosSecure()
     const { data: users = [], refetch } = useQuery(['users'], async () => {
-        const res = await fetch('http://localhost:5000/users')
-        return res.json()
+        const res = await axiosSecure.get('/users')
+        return res.data;
     })
     // admin
     const  handelMakeAdmin = user =>{
@@ -70,7 +71,7 @@ const AllUsers = () => {
                                 <td>
                                     {
                                         user.role === 'instructor'? 'instructor' : 
-                                        <button onClick={() => handelMakeInstructor(user)} className="btn btn-ghost  text-gray-700 bg-emerald-200 hover:bg-emerald-400 me-2">MAKE INSTRUCTOR</button>
+                                        <button  onClick={() => handelMakeInstructor(user)} className="btn btn-ghost  text-gray-700 bg-emerald-200 hover:bg-emerald-400 me-2">MAKE INSTRUCTOR</button>
                                     }
                                     
                                 </td>

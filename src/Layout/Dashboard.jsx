@@ -1,11 +1,16 @@
 import { NavLink, Outlet } from "react-router-dom";
 import useAdmin from "../hooks/useAdmin";
+import useInstructor from "../hooks/useInstructor";
 
 const Dashboard = () => {
     // TODO
     // const isAdmin = true;
 
-    const [isAdmin] =useAdmin()
+    const [isAdmin] = useAdmin()
+
+    const [isInstructor] = useInstructor()
+
+    console.log({isAdmin, isInstructor})
     return (
         <div className="drawer lg:drawer-open">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -19,22 +24,32 @@ const Dashboard = () => {
                 <ul className="menu p-4 w-80 h-full  text-base-content">
 
                     {
-                        isAdmin ? <>
-                            <li><NavLink className="font-bold" to="/">Admin Home</NavLink></li>
-                            <li><NavLink className="font-bold" to="/dashboard/allclasses">Manage Classes</NavLink></li>
-                            <li><NavLink className="font-bold" to="/dashboard/allusers">Manage Users</NavLink></li>
-                            <div className="divider"></div>
-                            <li><NavLink className="font-bold" to="/">Home</NavLink></li>
-                        </> :
+                        isAdmin ? (<div> <li><NavLink className="font-bold" to="/">Admin Home</NavLink></li>
+                        <li><NavLink className="font-bold" to="/dashboard/allclasses">Manage Classes</NavLink></li>
+                        <li><NavLink className="font-bold" to="/dashboard/allusers">Manage Users</NavLink></li>
+                        <div className="divider"></div>
+                        <li><NavLink className="font-bold" to="/">Home</NavLink></li></div>)
+                        : isInstructor ? (
+                           <div>
+                             <li><NavLink className="font-bold" to="/dashboard/addclasses">Add a Class</NavLink></li>
+                             <li><NavLink className="font-bold" to="/">My Classes</NavLink></li>
+                           </div>
+                            
+                        ) 
 
-                            <>
-                                <li><NavLink className="font-bold" to="/">Student Home</NavLink></li>
+                        :
+                         (<div> <li><NavLink className="font-bold" to="/">Student Home</NavLink></li>
                                 <li><NavLink className="font-bold" to="/dashboard/myenrolledclasses">My Enrolled Classes</NavLink></li>
                                 <li><NavLink className="font-bold" to="/dashboard/myclasses">My Selected Classes</NavLink></li>
                                 <div className="divider"></div>
-                                <li><NavLink className="font-bold" to="/">Home</NavLink></li>
-                            </>
+                                <li><NavLink className="font-bold" to="/">Home</NavLink></li></div>)
                     }
+
+
+                    <div>
+
+                    </div>
+
                     {/* Sidebar content here */}
 
                 </ul>

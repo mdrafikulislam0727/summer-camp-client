@@ -10,6 +10,7 @@ import Dashboard from "../Layout/Dashboard";
 import MyClasses from "../Pages/Dashboard/MyClasses/MyClasses";
 import PrivateRoute from "./PrivateRoute";
 import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
+import AddClasses from "../Pages/Dashboard/AddClasses/AddClasses";
 
 
 
@@ -50,6 +51,10 @@ import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
         {
           path:'allusers',
           element:<AllUsers></AllUsers>
+        },
+        {
+          path:'addclasses',
+          element:<AddClasses></AddClasses>
         }
       ]
     }
