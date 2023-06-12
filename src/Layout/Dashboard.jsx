@@ -33,7 +33,7 @@ const Dashboard = () => {
                            <div>
                              <li><NavLink className="font-bold text-lime-400" to="/">Instructor Home</NavLink></li>
                              <li><NavLink className="font-bold" to="/dashboard/addclasses">Add a Class</NavLink></li>
-                             <li><NavLink className="font-bold" to="/">My Classes</NavLink></li>
+                             <li><NavLink className="font-bold" to="/dashboard/instructorclasses">My Classes</NavLink></li>
                            </div>
                             
                         ) 

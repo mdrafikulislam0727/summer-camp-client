@@ -13,6 +13,8 @@ import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
 import AddClasses from "../Pages/Dashboard/AddClasses/AddClasses";
 import ManageClasses from "../Pages/Dashboard/ManageClasses/ManageClasses";
 import InstructorsPage from "../Pages/InstructorsPage/InstructorsPage";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import InstructorData from "../Pages/InstructorData/InstructorData";
 
 
 
@@ -20,6 +22,7 @@ import InstructorsPage from "../Pages/InstructorsPage/InstructorsPage";
     {
       path: "/",
       element: <Main></Main>,
+      errorElement:<ErrorPage></ErrorPage>,
       children:[
         {
             path:'/',
@@ -65,6 +68,10 @@ import InstructorsPage from "../Pages/InstructorsPage/InstructorsPage";
         {
           path:'manageclasses',
           element:<ManageClasses></ManageClasses>
+        },
+        {
+          path:'instructorclasses',
+          element:<InstructorData></InstructorData>
         }
       ]
     }
