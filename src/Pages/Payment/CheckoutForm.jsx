@@ -10,8 +10,7 @@ const CheckoutForm = ({ price }) => {
     const [axiosSecure] =useAxiosSecure();
     const [cardError, setCardError] = useState('');
     const [clientSecret, setClientSecret]=useState('');
-    console.log(clientSecret)
-    console.log(price)
+  
     useEffect(()=>{
        if(price > 0){
 

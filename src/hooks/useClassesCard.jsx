@@ -11,7 +11,6 @@ const useClassCard = () => {
         queryKey: ['carts', user?.email],
         queryFn: async () => {
             const res = await axiosSecure(`/carts?email=${user?.email}`)
-            console.log('res from axios', res)
             return res.data;
         },
     })

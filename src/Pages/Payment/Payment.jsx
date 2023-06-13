@@ -1,19 +1,24 @@
 import { loadStripe } from "@stripe/stripe-js";
 import CheckoutForm from "./CheckoutForm";
 import { Elements } from "@stripe/react-stripe-js";
-import useClassCard from "../../hooks/UseClassesCard";
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const stripePromise = loadStripe(import.meta.env.VITE_Payment_Gateway_Pk)
 
 const Payment = () => {
-    const [cart] =useClassCard();
-    console.log(cart)
-    const total =cart.find(data => data.price > 0)
+    const {id} =useParams()
+    const [price, setPrice] = useState(0)
+    useEffect(()=>{
+        fetch(`http://localhost:5000/carts/${id}`)
+        .then(res => res.json())
+        .then(data =>setPrice(parseFloat(data.price)) )
+    },[id])
     return (
         <div className="w-full">
             <h2 className="uppercase text-3xl text-center font-bold my-4">Payment</h2>
             <Elements stripe={stripePromise}>
-                <CheckoutForm price={total}></CheckoutForm>
+                <CheckoutForm price={price}></CheckoutForm>
             </Elements>
         </div>
     );

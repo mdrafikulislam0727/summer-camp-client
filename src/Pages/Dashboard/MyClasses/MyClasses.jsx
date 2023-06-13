@@ -82,7 +82,7 @@ const MyClasses = () => {
                                     <td>{data.price}</td>
                                     <td className="text-center">{data.availableSeats}</td>
                                     <td>
-                                       <Link to="/dashboard/payment"><button className="btn btn-sm bg-sky-200">Pay</button></Link>
+                                       <Link to={`/dashboard/payment/${data._id}`}><button className="btn btn-sm bg-sky-200">Pay</button></Link>
                                     </td>
                                     <th>
                                         <button onClick={() => handelDelete(data)} className="btn btn-ghost  text-gray-700 hover:bg-cyan-400 bg-cyan-200"> <FaTrashAlt></FaTrashAlt> </button>

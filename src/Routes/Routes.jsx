@@ -56,7 +56,7 @@ import Payment from "../Pages/Payment/Payment";
           element:<MyClasses></MyClasses>
         },
         {
-          path:'payment',
+          path:'payment/:id',
           element:<Payment></Payment>
         },
         {
