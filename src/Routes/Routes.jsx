@@ -15,6 +15,7 @@ import ManageClasses from "../Pages/Dashboard/ManageClasses/ManageClasses";
 import InstructorsPage from "../Pages/InstructorsPage/InstructorsPage";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import InstructorData from "../Pages/InstructorData/InstructorData";
+import Payment from "../Pages/Payment/Payment";
 
 
 
@@ -55,7 +56,12 @@ import InstructorData from "../Pages/InstructorData/InstructorData";
           element:<MyClasses></MyClasses>
         },
         {
-          path:'myenrolledclasses'
+          path:'payment',
+          element:<Payment></Payment>
+        },
+        {
+          path:'myenrolledclasses',
+
         },
         {
           path:'allusers',
