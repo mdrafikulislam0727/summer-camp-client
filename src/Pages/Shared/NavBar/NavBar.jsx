@@ -33,7 +33,7 @@ const NavBar = () => {
     
        {
         user ? <>
-         <li className="font-bold text-[20px] hover:text-cyan-300"><Link to="/dashboard/dashboards">Dashboard</Link></li>
+         <li className="font-bold text-[20px] hover:text-cyan-300"><Link to="/dashboard/dashboardHome">Dashboard</Link></li>
          <img className="w-[50px] h-[50px] mr-4 rounded-lg" src={user?.photoURL} alt="" />
          <button onClick={handelLogOut} className="btn btn-outline btn-secondary">LogOut</button>
 

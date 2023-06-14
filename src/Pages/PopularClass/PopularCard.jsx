@@ -4,7 +4,8 @@ import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
 const PopularCard = ({item}) => {
-    const {image,name,instructor,numberOfStudent} =item;
+  console.log(item)
+    const {image,name,availableSeats,instructorName,price} =item;
     const {user}=useContext(AuthContext)
     const navigate =useNavigate()
 
@@ -45,8 +46,9 @@ const PopularCard = ({item}) => {
         <figure><img src={image} alt="Shoes" /></figure>
         <div className="card-body">
           <h2 className="card-title font-bold">{name}</h2>
-          <p className="font-bold">Instructor Name: {instructor}</p>
-          <p>Number Of Student : {numberOfStudent}</p>
+          <p className="font-bold">Instructor Name: {instructorName}</p>
+          <p>Available Seats : {availableSeats}</p>
+          <p>Price : $ <span className="text-orange-500 font-bold"> {price}</span></p>
           <div className="card-actions justify-end">
             <button onClick={() => handelAddToCard(item)} className=" font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-lg rounded-full border-transparent border-2  text-gray-700 hover:bg-cyan-400 bg-cyan-200">Select</button>
           </div>

@@ -8,7 +8,6 @@ import SignUp from "../Pages/SignUp/SignUp";
 import ClassesCard from "../Pages/ClassesCard/ClassesCard";
 import Dashboard from "../Layout/Dashboard";
 import MyClasses from "../Pages/Dashboard/MyClasses/MyClasses";
-import PrivateRoute from "./PrivateRoute";
 import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
 import AddClasses from "../Pages/Dashboard/AddClasses/AddClasses";
 import ManageClasses from "../Pages/Dashboard/ManageClasses/ManageClasses";
@@ -51,10 +50,10 @@ import DashboardWc from "../Pages/Dashboard/DashboardWc/DashboardWc";
     },
     {
       path:'dashboard',
-      element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
+      element:<Dashboard></Dashboard>,
       children:[
         {
-          path:"dashboards",
+          path:"dashboardHome",
           element:<DashboardWc></DashboardWc>
         },
         {
