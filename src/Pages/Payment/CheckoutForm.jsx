@@ -2,7 +2,6 @@ import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import { useEffect, useState } from "react";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import useAuth from "../../hooks/useAuth";
-import './CheckoutForm.css'
 
 const CheckoutForm = ({ price,classes }) => {
     const stripe = useStripe();
@@ -82,7 +81,8 @@ const CheckoutForm = ({ price,classes }) => {
                 availableSeats:classes.availableSeats,
                 image:classes.image,
                 name:classes.name,
-                price:classes.price
+                price:classes.price,
+                enrolled:classes.enrolled
             }
             axiosSecure.post('/payments', payment)
             .then(res =>{

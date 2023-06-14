@@ -16,6 +16,8 @@ import InstructorsPage from "../Pages/InstructorsPage/InstructorsPage";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import InstructorData from "../Pages/InstructorData/InstructorData";
 import Payment from "../Pages/Payment/Payment";
+import MyEnrolledClasses from "../Pages/Dashboard/MyEnroledClasses/MyEnrolledClasses";
+import DashboardWc from "../Pages/Dashboard/DashboardWc/DashboardWc";
 
 
 
@@ -52,6 +54,10 @@ import Payment from "../Pages/Payment/Payment";
       element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
       children:[
         {
+          path:"dashboards",
+          element:<DashboardWc></DashboardWc>
+        },
+        {
           path:'myclasses',
           element:<MyClasses></MyClasses>
         },
@@ -61,6 +67,7 @@ import Payment from "../Pages/Payment/Payment";
         },
         {
           path:'myenrolledclasses',
+          element:<MyEnrolledClasses></MyEnrolledClasses>
 
         },
         {

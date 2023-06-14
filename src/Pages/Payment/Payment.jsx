@@ -16,6 +16,7 @@ const Payment = () => {
         .then(data =>{
             setPrice(parseFloat(data.price));
             setClasses(data)
+            console.log(data)
         } )
     },[id])
     return (

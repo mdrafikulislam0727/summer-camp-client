@@ -17,7 +17,9 @@ import img9 from '../../../src/assets/swiper/img5.png'
 
 const ExtraSection = () => {
     return (
-        <Swiper
+        <div className="my-10">
+            <h2 className="text-4xl uppercase font-bold text-center my-10">Sports academies display</h2>
+            <Swiper
             slidesPerView={3}
             spaceBetween={30}
             pagination={{
@@ -38,6 +40,7 @@ const ExtraSection = () => {
           
             
         </Swiper>
+        </div>
     );
 };
 

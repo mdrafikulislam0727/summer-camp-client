@@ -24,25 +24,30 @@ const Dashboard = () => {
 
                     {
                         isAdmin ? (<div> <li><NavLink className="font-bold text-lime-400" to="/">Admin Home</NavLink></li>
-                        <li><NavLink className="font-bold" to="/dashboard/manageclasses">Manage Classes</NavLink></li>
-                        <li><NavLink className="font-bold" to="/dashboard/allusers">Manage Users</NavLink></li>
-                        <div className="divider"></div>
-                        <li><NavLink className="font-bold" to="/">Home</NavLink></li></div>)
-                        : isInstructor ? (
-                           <div>
-                             <li><NavLink className="font-bold text-lime-400" to="/">Instructor Home</NavLink></li>
-                             <li><NavLink className="font-bold" to="/dashboard/addclasses">Add a Class</NavLink></li>
-                             <li><NavLink className="font-bold" to="/dashboard/instructorclasses">My Classes</NavLink></li>
-                           </div>
-                            
-                        ) 
+                            <li><NavLink className="font-bold" to="/dashboard/manageclasses">Manage Classes</NavLink></li>
+                            <li><NavLink className="font-bold" to="/dashboard/allusers">Manage Users</NavLink></li>
+                            <div className="divider"></div>
+                            <li><NavLink className="font-bold" to="/">Home</NavLink></li>
+                           
+                        </div>)
+                            : isInstructor ? (
+                                <div>
+                                    <li><NavLink className="font-bold text-lime-400" to="/">Instructor Home</NavLink></li>
+                                    <li><NavLink className="font-bold" to="/dashboard/addclasses">Add a Class</NavLink></li>
+                                    <li><NavLink className="font-bold" to="/dashboard/instructorclasses">My Classes</NavLink></li>
+                                    <div className="divider"></div>
+                                    <li><NavLink className="font-bold" to="/">Home</NavLink></li>
+                                </div>
 
-                        :
-                         (<div> <li><NavLink className="font-bold text-lime-400" to="/">Student Home</NavLink></li>
-                                <li><NavLink className="font-bold" to="/dashboard/myenrolledclasses">My Enrolled Classes</NavLink></li>
-                                <li><NavLink className="font-bold" to="/dashboard/myclasses">My Selected Classes</NavLink></li>
-                                <div className="divider"></div>
-                                <li><NavLink className="font-bold" to="/">Home</NavLink></li></div>)
+
+                            )
+
+                                :
+                                (<div> <li><NavLink className="font-bold text-lime-400" to="/">Student Home</NavLink></li>
+                                    <li><NavLink className="font-bold" to="/dashboard/myenrolledclasses">My Enrolled Classes</NavLink></li>
+                                    <li><NavLink className="font-bold" to="/dashboard/myclasses">My Selected Classes</NavLink></li>
+                                    <div className="divider"></div>
+                                    <li><NavLink className="font-bold" to="/">Home</NavLink></li></div>)
                     }
 
 

@@ -6,7 +6,7 @@ const InstructorsPage = () => {
     const instructorData =userData.filter(data => data.role === 'instructor')
     console.log(instructorData)
     return (
-        <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {
                 instructorData.map(instructor => <InstructorCard 
                 key={instructor._id}
